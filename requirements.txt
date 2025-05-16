@@ -1,0 +1,5 @@
+flask
+oracledb
+openai
+python-dotenv
+pandas
