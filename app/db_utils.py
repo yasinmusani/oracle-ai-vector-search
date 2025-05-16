@@ -10,3 +10,4 @@ def get_connection():
         password=os.getenv("DB_PASSWORD"),
         dsn=os.getenv("DB_DSN"),
     )
+XXECS_SYNTHETIC_DATA_PROCESS_T
