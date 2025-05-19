@@ -8,16 +8,19 @@ app = Flask(__name__)
 @app.route("/search", methods=["POST"])
 def search():
     data = request.get_json()
-    query = data.get("query", "")
+    query = data.get("query", "")  # Getting the search query
     if not query:
-        return jsonify({"error": "Query is required"}), 400
+        return jsonify({"error": "Query is required"}), 400  # Handle missing query
 
+    # Get the query's embedding from Hugging Face model
     embedding = get_embedding(query)
 
+    # Establish DB connection and execute search logic
     with get_connection() as conn:
         cursor = conn.cursor()
         results = search_similar_products(cursor, embedding)
 
+    # Return the results in JSON format
     return jsonify({"results": results})
 
 if __name__ == "__main__":
