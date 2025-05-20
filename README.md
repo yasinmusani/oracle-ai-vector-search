@@ -1,5 +1,7 @@
 # Oracle AI Vector Search Starter
 
+![Oracle AI Vector Search](OracleAIVectorSearchStarter_Cover.png)
+
 This is a Python + Oracle Database 23ai sample project that uses AI vector search capabilities and Hugging Face embeddings to perform semantic product search.
 
 ## 🔧 Features
