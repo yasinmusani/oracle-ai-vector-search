@@ -21,12 +21,23 @@ model = AutoModel.from_pretrained(model_path, local_files_only=True)
 
 
 
+#def get_embedding(text):
+#    inputs = tokenizer(text, return_tensors="pt", truncation=True, padding=True, max_length=512)
+#    with torch.no_grad():
+#        outputs = model(**inputs)
+#    embeddings = outputs.last_hidden_state.mean(dim=1).squeeze().numpy().astype(np.float32)  # Ensure float32
+#    return embeddings
+
+
 def get_embedding(text):
     inputs = tokenizer(text, return_tensors="pt", truncation=True, padding=True, max_length=512)
     with torch.no_grad():
         outputs = model(**inputs)
-    embeddings = outputs.last_hidden_state.mean(dim=1).squeeze().numpy().astype(np.float32)  # Ensure float32
+    embeddings = outputs.last_hidden_state.mean(dim=1).squeeze().numpy().astype(np.float32)
+    
+    print(f"🔍 Embedding for '{text}': {embeddings[:5]}...")  # Check the first few values
     return embeddings
+
 
 
 
