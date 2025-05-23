@@ -9,9 +9,9 @@ def search_similar_products(cursor, query_embedding):
     embedding_str = json.dumps(query_embedding)
 
     sql = """
-        SELECT product_name, description
+        SELECT product_name, description, VECTOR_DISTANCE(prod_embedding, :1) AS distance
         FROM products
-        ORDER BY VECTOR_DISTANCE(prod_embedding, VECTOR(:1))
+        ORDER BY distance
         FETCH FIRST 5 ROWS ONLY
     """
     cursor.execute(sql, [embedding_str])

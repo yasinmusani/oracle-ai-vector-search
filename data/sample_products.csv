@@ -1,4 +1,11 @@
 product_id,product_name,description
-1,"Wireless Mouse","Ergonomic mouse with 2.4GHz connection"
-2,"Gaming Keyboard","Mechanical keyboard with RGB lighting"
-3,"Noise Cancelling Headphones","Over-ear headphones with ANC"
+1,Wireless Mouse,Ergonomic mouse with 2.4GHz connection
+2,Noise Cancelling Headphones,Over-ear headphones with ANC
+3,Gaming Keyboard,Mechanical keyboard with RGB lighting
+4,Smartphone,Latest model with AI camera features
+5,Laptop,Ultrabook with 16GB RAM and 1TB SSD
+6,Bluetooth Speaker,Portable speaker with deep bass
+7,Smartwatch,Fitness tracking with heart rate monitor
+8,eBook Reader,"6-inch glare-free display, 8GB storage"
+9,Tablet,10-inch screen with stylus support
+10,Wireless Charger,Fast charging pad for smartphones
