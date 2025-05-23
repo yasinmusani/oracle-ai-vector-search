@@ -145,10 +145,3 @@ Refer to [`sample_data.csv`](sample_data.csv) for sample products. Insert them i
   ]
 }
 ```
-
----
-"""
-
-readme_path = Path("/mnt/data/README.md")
-readme_path.write_text(readme_content.strip())
-readme_path.name
