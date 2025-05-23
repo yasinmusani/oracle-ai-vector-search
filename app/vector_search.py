@@ -1,10 +1,10 @@
-def create_vector_index(cursor):
-    cursor.execute("""
-        CREATE INDEX prod_vec_idx ON products(prod_embedding)
-        INDEXTYPE IS VECTOR_SEARCH
-    """)
+import numpy as np
 
 def search_similar_products(cursor, query_embedding):
+    # Ensure the embedding is converted to a list of floats
+    if isinstance(query_embedding, np.ndarray):
+        query_embedding = query_embedding.tolist()
+
     sql = """
         SELECT product_name, description
         FROM products
@@ -13,3 +13,4 @@ def search_similar_products(cursor, query_embedding):
     """
     cursor.execute(sql, [query_embedding])
     return cursor.fetchall()
+

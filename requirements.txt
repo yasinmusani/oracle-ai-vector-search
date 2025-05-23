@@ -1,5 +1,6 @@
 flask
 oracledb
-openai
+transformers
+torch
 python-dotenv
 pandas
