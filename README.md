@@ -1,5 +1,8 @@
 # Oracle AI Vector Search Starter
 
+**Disclaimer:** This project is a personal initiative created for educational purposes and is not affiliated with or endorsed by my employer.
+
+
 ![Oracle AI Vector Search](OracleAIVectorSearchStarter_Cover.png)
 
 A sample project demonstrating Oracle Database 23ai's **AI vector search capabilities** using **Hugging Face embeddings** and a user-friendly **Streamlit interface**. Includes both API and UI to explore semantic product search.
