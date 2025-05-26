@@ -22,13 +22,18 @@ A sample project demonstrating Oracle Database 23ai's **AI vector search capabil
 
 ## 🛠 Tech Stack
 
-- Oracle Database 23ai
-- Python 3.11+
-- Flask (API backend)
-- Streamlit (Frontend UI)
-- Hugging Face Transformers (`sentence-transformers/all-MiniLM-L6-v2`)
-- oracledb (Oracle Python driver)
-- numpy, pandas
+This project utilizes the following technologies, each licensed by their respective vendors:
+
+- **Oracle Database 23ai**: Licensed product of Oracle Corporation. This project does not include or distribute any Oracle software or proprietary content.
+- **Python 3.11+**: Open-source programming language licensed under the [Python Software Foundation License](https://docs.python.org/3/license.html).
+- **Flask**: A lightweight WSGI web application framework licensed under the [BSD-3-Clause License](https://flask.palletsprojects.com/en/2.0.x/license/).
+- **Streamlit**: An open-source app framework for Machine Learning and Data Science licensed under the [Apache 2.0 License](https://github.com/streamlit/streamlit/blob/develop/LICENSE).
+- **Hugging Face Transformers**: A library for state-of-the-art NLP licensed under the [Apache 2.0 License](https://github.com/huggingface/transformers/blob/main/LICENSE).
+- **oracledb**: Oracle Python driver licensed under the [Oracle License](https://www.oracle.com/database/technologies/appdev/python.html).
+- **numpy**: A fundamental package for scientific computing with Python licensed under the [BSD License](https://numpy.org/doc/stable/license.html).
+- **pandas**: A fast, powerful, flexible, and easy-to-use open-source data analysis and manipulation tool licensed under the [BSD-3-Clause License](https://pandas.pydata.org/pandas-docs/stable/getting_started/overview.html#license).
+
+> **Disclaimer:** This project is intended for educational purposes only and is not affiliated with or endorsed by Oracle Corporation or any other vendor mentioned.
 
 ---
 
