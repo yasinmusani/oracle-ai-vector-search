@@ -94,7 +94,7 @@ DB_DSN=localhost/freepdb1
 ### 6. Populate Vector Embeddings
 
 ```bash
-python app/populate_embeddings.py
+python app/vectorize_update.py
 ```
 
 ---
