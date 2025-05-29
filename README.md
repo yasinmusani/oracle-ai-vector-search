@@ -128,7 +128,7 @@ streamlit run app/ui.py
 
 ## 🧪 Sample Data
 
-Refer to [`sample_data.csv`](sample_data.csv) for sample products. Insert them into your Oracle DB using a bulk `INSERT` statement and generate embeddings for the `VECTOR` column.
+Refer to [`sample_products.csv`](sample_products.csv) for sample products. Insert them into your Oracle DB using a bulk `INSERT` statement and generate embeddings for the `VECTOR` column.
 
 ---
 
